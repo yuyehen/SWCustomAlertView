@@ -15,6 +15,8 @@
 		FF06F8F11DB7563800526003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF06F8EF1DB7563800526003 /* LaunchScreen.storyboard */; };
 		FF06F8FC1DB7563800526003 /* SWCustomAlertViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF06F8FB1DB7563800526003 /* SWCustomAlertViewTests.m */; };
 		FF06F9071DB7563800526003 /* SWCustomAlertViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF06F9061DB7563800526003 /* SWCustomAlertViewUITests.m */; };
+		FF06F9181DB7564500526003 /* SWCustomAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF06F9151DB7564500526003 /* SWCustomAlertView.m */; };
+		FF06F9191DB7564500526003 /* SWPopupMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF06F9171DB7564500526003 /* SWPopupMaskView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		FF06F9021DB7563800526003 /* SWCustomAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWCustomAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF06F9061DB7563800526003 /* SWCustomAlertViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWCustomAlertViewUITests.m; sourceTree = "<group>"; };
 		FF06F9081DB7563800526003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF06F9141DB7564500526003 /* SWCustomAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCustomAlertView.h; sourceTree = "<group>"; };
+		FF06F9151DB7564500526003 /* SWCustomAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCustomAlertView.m; sourceTree = "<group>"; };
+		FF06F9161DB7564500526003 /* SWPopupMaskView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWPopupMaskView.h; sourceTree = "<group>"; };
+		FF06F9171DB7564500526003 /* SWPopupMaskView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWPopupMaskView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				FF06F8E51DB7563800526003 /* AppDelegate.m */,
 				FF06F8E71DB7563800526003 /* ViewController.h */,
 				FF06F8E81DB7563800526003 /* ViewController.m */,
+				FF06F9141DB7564500526003 /* SWCustomAlertView.h */,
+				FF06F9151DB7564500526003 /* SWCustomAlertView.m */,
+				FF06F9161DB7564500526003 /* SWPopupMaskView.h */,
+				FF06F9171DB7564500526003 /* SWPopupMaskView.m */,
 				FF06F8EA1DB7563800526003 /* Main.storyboard */,
 				FF06F8ED1DB7563800526003 /* Assets.xcassets */,
 				FF06F8EF1DB7563800526003 /* LaunchScreen.storyboard */,
@@ -270,8 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF06F9191DB7564500526003 /* SWPopupMaskView.m in Sources */,
 				FF06F8E91DB7563800526003 /* ViewController.m in Sources */,
 				FF06F8E61DB7563800526003 /* AppDelegate.m in Sources */,
+				FF06F9181DB7564500526003 /* SWCustomAlertView.m in Sources */,
 				FF06F8E31DB7563800526003 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
