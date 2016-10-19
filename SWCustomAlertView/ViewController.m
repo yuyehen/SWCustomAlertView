@@ -39,6 +39,7 @@
     SWCustomAlertView *alert = [[SWCustomAlertView alloc] initWithTitle:@"第一个弹框" message:@"1" cancelButtonTitle:@"取消" otherButtonTitles:@[@"确定"] actionBlock:^(NSInteger buttonIndex) {
         
     }];
+    //当前有SWCustomAlertView展示时，就不在展示这个
     alert.isOnlyOne = YES;
     [alert show];
     
@@ -71,6 +72,7 @@
     SWCustomAlertView *alert = [[SWCustomAlertView alloc] initWithTitle:@"第一个弹框" message:@"1" cancelButtonTitle:@"取消" otherButtonTitles:@[@"确定"] actionBlock:^(NSInteger buttonIndex) {
         
     }];
+    //SWCustomAlertView 不掉用dismiss那么就不会消失
     alert.alwayDisplay = YES;
     [alert show];
     
