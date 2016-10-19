@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53U-qg-YE6">
+                                <rect key="frame" x="252" y="60" width="96" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ERX-Mx-Ecf"/>
+                                    <constraint firstAttribute="width" constant="96" id="qIZ-ma-GNt"/>
+                                </constraints>
+                                <state key="normal" title="弹一个框"/>
+                                <connections>
+                                    <action selector="oneAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1F-oV-NF6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yf-cT-faG">
+                                <rect key="frame" x="264.5" y="130" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="Ti3-od-Yma"/>
+                                    <constraint firstAttribute="height" constant="30" id="x1l-b4-M4D"/>
+                                </constraints>
+                                <state key="normal" title="弹两个框"/>
+                                <connections>
+                                    <action selector="twoAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gnq-XO-0KZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0D-nW-4wh">
+                                <rect key="frame" x="198.5" y="200" width="203" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="3ul-ge-ERf"/>
+                                    <constraint firstAttribute="height" constant="30" id="lqE-An-G6K"/>
+                                </constraints>
+                                <state key="normal" title="两个框但只显示一个"/>
+                                <connections>
+                                    <action selector="onlyOneAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lIk-Y8-Ez2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tux-f2-Uci">
+                                <rect key="frame" x="252" y="270" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="cQ6-Kf-SIV"/>
+                                    <constraint firstAttribute="height" constant="30" id="yp5-Z6-arW"/>
+                                </constraints>
+                                <state key="normal" title="多个弹框"/>
+                                <connections>
+                                    <action selector="moreAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZGa-dv-wVe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyk-9A-Eca">
+                                <rect key="frame" x="136" y="340" width="328" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="8yz-cE-ZEJ"/>
+                                    <constraint firstAttribute="width" constant="328" id="gW2-r5-Q4j"/>
+                                </constraints>
+                                <state key="normal" title="展示弹框但按按钮不消失，自定义消失状况"/>
+                                <connections>
+                                    <action selector="notDisappear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kam-Xc-FoE"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tux-f2-Uci" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0PA-dU-oQU"/>
+                            <constraint firstItem="g0D-nW-4wh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1HV-4h-ccC"/>
+                            <constraint firstItem="53U-qg-YE6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="DwN-mJ-TXY"/>
+                            <constraint firstItem="tux-f2-Uci" firstAttribute="top" secondItem="g0D-nW-4wh" secondAttribute="bottom" constant="40" id="NlL-aA-iKc"/>
+                            <constraint firstItem="tyk-9A-Eca" firstAttribute="top" secondItem="tux-f2-Uci" secondAttribute="bottom" constant="40" id="QFi-s4-QVF"/>
+                            <constraint firstItem="3Yf-cT-faG" firstAttribute="top" secondItem="53U-qg-YE6" secondAttribute="bottom" constant="40" id="QdK-IN-pwy"/>
+                            <constraint firstItem="3Yf-cT-faG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UGy-ms-F6y"/>
+                            <constraint firstItem="tyk-9A-Eca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YaF-Vn-yYs"/>
+                            <constraint firstItem="53U-qg-YE6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cHd-f0-LJm"/>
+                            <constraint firstItem="g0D-nW-4wh" firstAttribute="top" secondItem="3Yf-cT-faG" secondAttribute="bottom" constant="40" id="wgf-Vc-MPg"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="278" y="327"/>
         </scene>
     </scenes>
 </document>
